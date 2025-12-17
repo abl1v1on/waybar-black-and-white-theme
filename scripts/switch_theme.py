@@ -21,6 +21,8 @@ def main() -> None:
     with open(path_to_style, mode="w") as file:
         file.writelines(lines)
 
+    print("Successfully! Now run restart.sh script")
+
 
 if __name__ == "__main__":
     main()
