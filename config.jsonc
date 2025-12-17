@@ -1,0 +1,92 @@
+{
+  "layer": "top",
+  "position": "top",
+  "spaces": 0,
+  "margin-top": 10,
+  "margin-bottom": -5,
+
+  "modules-left": [
+    "custom/arch-logo",
+    "hyprland/workspaces",
+    "cpu",
+    "memory",
+    "temperature"
+  ],
+  "modules-center": ["clock"],
+  "modules-right": [
+    "tray",
+    "network",
+    "pulseaudio",
+    "battery",
+    "custom/reboot",
+    "custom/poweroff"
+  ],
+
+  "cpu": {
+    "interval": 1,
+    "format": " {usage}%"
+  },
+
+  "memory": {
+    "interval": 15,
+    "format": " {used:0.1f}G/{total:0.1f}G"
+  },
+
+  "temperature": {
+    "format": " {temperatureC}°C"
+  },
+
+  "clock": {
+    "interval": 60,
+    "timezone": "Asia/Yekaterinburg",
+    "format": " {:%I:%M %p}"
+  },
+  
+  "tray": {
+    "icon-size": 30,
+    "spacing": 10,
+    "icons": {
+      "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
+    }
+  },
+
+  "network": {
+    "format-wifi": "󰤢",
+    "format-ethernet": "󰈀 ",
+    "format-disconnected": "󰤠 ",
+    "interval": 5,
+    "tooltip-format": "{essid} ({signalStrength}%)",
+    "on-click": "nm-connection-editor"
+  },
+
+  "pulseaudio": {
+    "format": "{icon}{volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", " "]
+    },
+    "on-click": "pavucontrol"
+  },
+  
+  "battery": {
+    "interval": 60,
+    "format": "{icon} {capacity}%",
+    "format-icons": ["", "", "", "", ""]
+  },
+
+  // custom modules
+  "custom/arch-logo": {
+    "exec": "echo 󰣇",
+    "on-click": "wofi --show drun"
+  },
+
+  "custom/reboot": {
+    "exec": "echo 󰑓",
+    "on-click": "sudo reboot"
+  },
+
+  "custom/poweroff": {
+    "exec": "echo ",
+    "on-click": "sudo shutdown now"
+  }
+}

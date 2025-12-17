@@ -1,0 +1,152 @@
+/* ==== START BLOCK VARIABLES ==== */
+@define-color main-text-color #f0f0f0;
+@define-color main-bg-color #212121;
+/* ==== END BLOCK VARIABLES ==== */
+
+* {    
+  font-family: "JetBrains Mono", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  transition: 0.2s;
+}
+
+#waybar {
+  background: transparent;
+  color: @main-text-color;
+}
+
+#workspaces button {
+  border-radius: 0;
+  color: rgb(126, 126, 126);
+}
+
+#workspaces button.active {
+  border-radius: 0;
+  color: @main-text-color;
+}
+
+#workspaces button:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* ==== START GENERAL STYLES ==== */
+#custom-arch-logo,
+#workspaces button,
+#cpu,
+#memory,
+#temperature,
+#clock,
+#network,
+#pulseaudio,
+#battery,
+#custom-poweroff,
+#custom-reboot {
+  background: @main-bg-color;
+  padding: 10px
+}
+/* ==== END GENERAL STYLES ==== */
+
+/* ==== START LEFT SIDE ==== */
+
+/* ==== START LEFT SIDE BLOCK 1 */
+#custom-arch-logo {
+  font-size: 24px;
+  margin-left: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: 1.5px solid @main-text-color;
+}
+
+#custom-arch-logo:hover {
+  background: @main-text-color;
+  color: blue;
+}
+/* ==== END LEFT SIDE BLOCK 1 */
+
+/* ==== START LEFT SIDE BLOCK 2 */
+#cpu {
+  margin-left: 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#memory {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#temperature {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* ==== END LEFT SIDE BLOCK 2 */
+/* ==== END LEFT SIDE ==== */
+
+/* ==== START CENTER ==== */
+#clock {
+  border-radius: 10px;
+}
+/* ==== END CENTER ==== */
+
+/* ==== START RIGHT SIDE ==== */
+/* ==== START RIGHT BLOCK 1 */
+#network {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#battery {
+  margin-right: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/* ==== END RIGHT BLOCK 1 */
+
+/* ==== START RIGHT BLOCK 2 ==== */
+#custom-poweroff {
+  margin-right: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#custom-poweroff:hover {
+  background: rgb(246, 40, 40);
+  color: white;
+}
+
+#custom-reboot {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#custom-reboot:hover {
+  background: #147cde;
+  color: white;
+}
+/* ==== END RIGHT BLOCK 2 ==== */
+/* ==== END RIGHT SIDE ==== */
+
+/* ==== EXTENDED WIDTH LEFT ==== */
+#custom-arch-logo,
+#memory,
+#clock,
+#pulseaudio,
+#custom-poweroff,
+#custom-reboot,
+#cpu,
+#network {
+  padding-left: 30px;
+}
+
+/* ==== EXTENDED WIDTH RIGHT ==== */
+#custom-arch-logo,
+#memory,
+#temperature,
+#clock,
+#pulseaudio,
+#battery,
+#custom-poweroff,
+#custom-reboot {
+  padding-right: 30px;
+}

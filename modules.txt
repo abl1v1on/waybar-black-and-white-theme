@@ -1,0 +1,26 @@
+left side
+----------
+block 1:
+  - arch logo
+  - workspaces
+block 2:
+  - cpu
+  - memory
+  - temperature
+
+center
+----------
+- clock
+
+right side
+----------
+block 1:
+  - tray
+block 2:
+  - wifi
+  - audio
+  - battery
+block 3:
+  - reboot button
+  - poweroff button
+
