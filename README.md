@@ -42,6 +42,12 @@ You can switch between dark and light theme. If you have dark wallpaper, choose 
 @define-color main-bg-color #212121; /* dark */
 ~~~
 
+Or use **switch_theme.py** script:
+~~~shell
+python3 scripts/switch_theme.py
+./scripts/restart.sh
+~~~
+
 ### Dark theme
 ![dark theme](readme_assets/dark.png)
 
