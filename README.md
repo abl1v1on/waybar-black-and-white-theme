@@ -10,7 +10,7 @@
 
     ~~~shell
     git clone https://github.com/abl1v1on/waybar-black-and-white-theme.git
-    cp -r waybar-black-and-white-theme/* ~/.config/waybar
+    cp -r waybar-black-and-white-theme/* ~/.config/waybar && cd ~/.config/waybar
     ~~~
 
 3. Run the script to reload the waybar:
